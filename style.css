@@ -129,3 +129,49 @@ body.nav-active {
     letter-spacing: 16px;
     text-align: center;
 }
+
+
+
+/* TOP BAR */
+.topbar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2px 50px;
+    border-block-end: 1px solid black;
+    transition: 250ms ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    z-index: 1000;
+}
+
+.topbar .top-container, .topbar-item {
+    display: flex;
+    align-items: center;
+}
+
+.topbar .top-container {
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.topbar-item {
+    gap: 10px;
+    margin-bottom: 0px;
+}
+
+.topbar-item .icon i {
+    font-size: 2rem;
+}
+
+.topbar-item .span {
+    font-size: 1.5rem;
+}
+
+.topbar .link {
+    transition: 250ms ease;
+}
