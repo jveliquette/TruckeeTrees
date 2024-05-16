@@ -1,0 +1,131 @@
+
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a, img, data, span, input, button, select, textarea {
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    height: auto;
+}
+
+input, button, select, textarea {
+  background: none;
+  border: none;
+  font: inherit;
+}
+
+input, select, textarea {
+  width: 100%;
+  outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.85em;
+  overflow: hidden;
+}
+
+body.loaded {
+    overflow: overlay;
+}
+
+body.nav-active {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #57655a;
+}
+
+
+
+/* PRELOAD */
+.preload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #57655a;
+    z-index: 10;
+    display: grid;
+    place-content: center;
+    justify-items: center;
+    transition: 500ms ease;
+}
+
+.preload > * {
+    transition: 250ms ease;
+}
+
+.preload.loaded > * {
+    opacity: 0;
+}
+
+.preload.loaded {
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+
+.tree {
+    font-size: calc(4rem + 3vw);
+    padding-bottom: 3rem;
+}
+
+.text {
+    line-height: 6rem;
+}
+
+.preload .text {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: calc(4rem + 2vw);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    text-align: center;
+}
