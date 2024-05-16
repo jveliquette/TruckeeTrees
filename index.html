@@ -12,7 +12,7 @@
     <!--FONT LINK-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--FONT AWESOME ICON LINK-->
     <script src="https://kit.fontawesome.com/af92b6bf29.js" crossorigin="anonymous"></script>
@@ -66,20 +66,44 @@
         <div class="logo">
             <img src="assets/logo.png" alt="logo" width="700px" height="auto">
         </div>
-        <div>
-            <ul class="nav-links">
+        <div class="nav-links">
+            <ul>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#our-plants">Our Plants</a></li>
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </div>
     </header>
+    <div class="content-box">
+        <div class="inner-content-box">
 
-    <section id="about-us"></section>
+            <section id="about-us">
 
-    <section id="our-plants"></section>
+                <div class="about-us">
+                    <p>About Us</p>
+                    <p>Rooted in Local Experience, Branching Out with Reliable Service</p>
+                    <div class="about-us-p">
+                        <button id="read-btn" class="expand-btn" onclick="toggleParagraph()" type="button"> Click to Read </button>
+                        <div id="expandable-paragraph">
+                            <p>Truckee Trees proudly boasts a legacy of community dedication. Owner, Peter Lavin, is a graduate of Truckee Tahoe's class of '79. He has over thirty years of hands-on experience in landscaping and nursery management and brings unparalleled expertise to every project. Formerly known as Rare Earth, our commitment to excellence remains steadfast. At Truckee Trees, we specialize in seamlessly delivering premium trees and nursery stock right to your doorstep via online ordering. Nestled in the foothills at 2500ft, our own expansive growing grounds ensure top-notch quality. Regular trips to Oregon allow us to curate a diverse selection from trusted growers, while our dedicated fleet of transport vehicles guarantees swift and efficient delivery. Whether you're selecting from our on-hand inventory or placing a custom order, our mission is simple: to fulfill your needs promptly, with deliveries typically within two weeks. Contractors, developers, and businesses alike can rely on us to be their go-to source for all tree and plant requirements. As our business evolves, we are committed to expanding our offerings and enhancing our stock availability. Thank you for your continued support as we grow together.</p>
+                            <button class="collapse-btn" onclick="toggleParagraph()" type="button">Collapse</button>
+                        </div>
+                    </div>
+                </div>
 
-    <section id="contact-us"></section>
+            </section>
+
+        </div>
+
+        <div class="inner-content-box">
+            <section id="our-plants"></section>
+        </div>
+
+        <div class="inner-content-box">
+            <section id="contact-us"></section>
+        </div>
+
+    </div>
 
     <footer></footer>
 

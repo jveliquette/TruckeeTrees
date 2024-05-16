@@ -1,9 +1,8 @@
 
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 *, *::before, *::after {
@@ -139,7 +138,7 @@ body.nav-active {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 2px 50px;
+    padding: 0px 50px;
     border-block-end: 1px solid black;
     transition: 250ms ease;
     background-color: rgba(0, 0, 0, 0.5);
@@ -165,13 +164,142 @@ body.nav-active {
 }
 
 .topbar-item .icon i {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .topbar-item .span {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .topbar .link {
     transition: 250ms ease;
+}
+
+
+
+/* NAV BAR - HEADER */
+#nav {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+#nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#nav .logo img {
+    max-width: 100%;
+    transition: max-width 0.5s ease;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-links {
+    margin-top: 20px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links ul li {
+    margin: 0
+}
+
+.nav-links ul li a {
+    font-size: 2.25rem;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2.5px;
+    background-color: #57655a;
+    transition: height 500ms ease-in;
+}
+
+.nav-links ul li a:hover::after {
+    width: 100%;
+  }
+
+
+/* CONTENT BOX STYLING */
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    background-color: #57655a;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.inner-content-box {
+    background-color: #323c34;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+
+
+/* ABOUT */
+
+#about-us {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.about-us {
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us p {
+}
+
+.about-us-p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand-btn, .collapse-btn {
+    color: black;
+    background-color: #57655a;
+    padding: 1rem 2rem;
+    margin-top: 20px;
+    border-radius: 2rem;
+    display: inline-block;
+}
+
+.expand-btn:hover, .collapse-btn:hover {
+    background-color: white;
+    transition: 250ms ease-in;
+}
+
+#expandable-paragraph {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    text-align: center;
+}
+
+#expandable-paragraph p {
+    padding-top: 2rem;
 }
