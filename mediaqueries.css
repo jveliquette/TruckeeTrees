@@ -1,0 +1,79 @@
+
+@media (max-width: 500px) {
+    .topbar {
+        display: none;
+    }
+
+    .nav-links ul li a {
+        font-size: 2rem;
+    }
+
+    .about-us h3, .photo-head, .our-plants h3, .contact-us h3 {
+        font-size: 2rem;
+    }
+
+    .contact-us h4 {
+        font-size: 1.75rem;
+    }
+
+    .about-us p, .our-plants p, .contact-us p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .expand-btn, .collapse-btn, .button-container button, .menu-btn {
+        font-size: 1.25rem;
+    }
+
+    .form-group label {
+        font-size: 1.5rem;
+    }
+
+    .form-group input, .form-group textarea {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (min-width: 471px) {
+
+        #nav {
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media (max-width: 470px) {
+
+    .nav-links ul li a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+}
+
+@media (max-width: 350px) {
+
+    .button-container button {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 300px) {
+
+    .nav-links ul li a {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 250px) {
+
+      .nav-links ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

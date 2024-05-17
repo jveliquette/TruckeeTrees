@@ -18,7 +18,7 @@
     <script src="https://kit.fontawesome.com/af92b6bf29.js" crossorigin="anonymous"></script>
 
     <!--FAVICON-->
-    <link rel="shortcut icon" href="assets/" type="image/png">
+    <link rel="shortcut icon" href="assets/TT.png" type="image/png">
 
     <!--CSS LINK-->
     <link rel="stylesheet" href="style.css">
@@ -34,7 +34,6 @@
         </div>
         <p class="text">Truckee Trees</p>
     </div>
-
 
 
     <!--TOP BAR-->
@@ -61,7 +60,7 @@
     </div>
 
 
-
+    <!--HEADER-->
     <header id="nav">
         <div class="logo">
             <img src="assets/logo.png" alt="logo" width="700px" height="auto">
@@ -73,6 +72,7 @@
                 <li><a href="#contact-us">Contact Us</a></li>
             </ul>
         </div>
+
     </header>
 
 
@@ -97,6 +97,7 @@
         </div>
     </div>
 
+
     <!--PHOTO GALLERY-->
     <div class="content-box">
         <div class="inner-content-box">
@@ -117,13 +118,14 @@
             </div>
 
             <div class="button-container">
-                <button onclick="slideImages('prev')" type="button">Previous</button>
+                <button onclick="slideImages('prev')" type="button">Last</button>
                 <button onclick="slideImages('next')" type="button">Next</button>
             </div>
         </div>
     </div>
 
-        <!--OUR PLANTS-->
+
+    <!--OUR PLANTS-->
     <div class="content-box">
         <div class="inner-content-box">
             <section id="our-plants">
@@ -667,12 +669,11 @@
                                 </div>
 
                                 <p>Don't see what you are looking for?</p>
-                                <button type="button">Contact Us</button>
+                                <button class="collapse-btn" type="button" onclick="location.href='#contact-us'">Contact Us</button>
 
                             </div>
                             <button class="collapse-btn" onclick="toggleMenu()" type="button">Collapse</button>
                         </div>
-
                     </div>
 
                 </div>
@@ -681,13 +682,58 @@
         </div>
     </div>
 
-        <!--CONTACT US-->
+
+    <!--CONTACT US-->
+    <div class="content-box">
         <div class="inner-content-box">
-            <section id="contact-us"></section>
+            <section id="contact-us">
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <h4>Looking for something special?</h4>
+                    <p>Get in touch with us for any inquiries, support, or order-related questions.</p>
+                    <form class="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button class="collapse-btn" type="submit">Send Message</button>
+
+                    </form>
+                </div>
+            </section>
         </div>
+    </div>
 
 
-    <footer></footer>
+    <footer id="footer">
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo" width="400px" height="auto">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#our-plants">Our Plants</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Truckee Trees. All rights reserved.</p>
+            <a href="https://www.linkedin.com/in/julia-veliquette-379255289" target="_blank">Website created by Julia Veliquette</a>
+        </div>
+    </footer>
+
 
     <!--JS LINK-->
     <script src="script.js"></script>
