@@ -23,3 +23,38 @@ function toggleParagraph() {
       readButton.style.display = "inline-block"; // Show the "Read" button
     }
   }
+
+
+/* IMAGE SLIDER */
+const imageWrapper = document.querySelector('.image-wrapper');
+  let imageIndex = 0;
+
+  function slideImages(direction) {
+    const imageWidth = document.querySelector('.image-wrapper img').clientWidth;
+    if (direction === 'next') {
+      imageIndex++;
+    } else {
+      imageIndex--;
+    }
+    if (imageIndex < 0) {
+      imageIndex = imageWrapper.children.length - 1;
+    } else if (imageIndex >= imageWrapper.children.length) {
+      imageIndex = 0;
+    }
+    const offset = -imageIndex * imageWidth;
+    imageWrapper.style.transform = `translateX(${offset}px)`;
+  }
+
+
+/* EXPAND PLANT MENU */
+function toggleMenu() {
+  var menu = document.getElementById("expandable-menu");
+  var button = document.getElementById("expand-btn");
+  if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
+    menu.style.maxHeight = menu.scrollHeight + "px"; // Expand the menu
+    button.textContent = "Collapse Menu"; // Change button text to "Collapse Menu"
+  } else {
+    menu.style.maxHeight = "0"; // Collapse the menu
+    button.textContent = "Expand Menu"; // Change button text to "Expand Menu"
+  }
+}

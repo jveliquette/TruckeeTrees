@@ -74,18 +74,23 @@
             </ul>
         </div>
     </header>
+
+
+
     <div class="content-box">
+
+        <!--ABOUT US-->
         <div class="inner-content-box">
 
             <section id="about-us">
 
                 <div class="about-us">
-                    <p>About Us</p>
+                    <h3>About Us</h3>
                     <p>Rooted in Local Experience, Branching Out with Reliable Service</p>
                     <div class="about-us-p">
-                        <button id="read-btn" class="expand-btn" onclick="toggleParagraph()" type="button"> Click to Read </button>
+                        <button id="read-btn" class="expand-btn" onclick="toggleParagraph()" type="button">Read About Us</button>
                         <div id="expandable-paragraph">
-                            <p>Truckee Trees proudly boasts a legacy of community dedication. Owner, Peter Lavin, is a graduate of Truckee Tahoe's class of '79. He has over thirty years of hands-on experience in landscaping and nursery management and brings unparalleled expertise to every project. Formerly known as Rare Earth, our commitment to excellence remains steadfast. At Truckee Trees, we specialize in seamlessly delivering premium trees and nursery stock right to your doorstep via online ordering. Nestled in the foothills at 2500ft, our own expansive growing grounds ensure top-notch quality. Regular trips to Oregon allow us to curate a diverse selection from trusted growers, while our dedicated fleet of transport vehicles guarantees swift and efficient delivery. Whether you're selecting from our on-hand inventory or placing a custom order, our mission is simple: to fulfill your needs promptly, with deliveries typically within two weeks. Contractors, developers, and businesses alike can rely on us to be their go-to source for all tree and plant requirements. As our business evolves, we are committed to expanding our offerings and enhancing our stock availability. Thank you for your continued support as we grow together.</p>
+                            <p>Truckee Trees proudly boasts a legacy of community dedication. Owner, Peter Lavin, is a graduate of Truckee Tahoe's class of '79. He has over thirty years of hands-on experience in landscaping and nursery management and brings unparalleled expertise to every project. Formerly known as Rare Earth, our commitment to excellence remains steadfast. At Truckee Trees, we specialize in seamlessly delivering premium trees and nursery stock right to your doorstep via online ordering. Nestled in the foothills at 2500ft, our own expansive growing grounds ensure top-notch quality. Regular trips to Oregon allow us to curate a diverse selection from trusted growers, while our dedicated fleet of transport vehicles guarantees swift and efficient delivery. Whether you're selecting from our on-hand inventory or placing a custom order, our mission is simple: to fulfill your needs promptly, with deliveries typically within two weeks. Contractors, developers, and businesses alike can rely on us to be their go-to source for all tree and plant requirements. Thank you for your continued support as we grow together.</p>
                             <button class="collapse-btn" onclick="toggleParagraph()" type="button">Collapse</button>
                         </div>
                     </div>
@@ -95,10 +100,586 @@
 
         </div>
 
+        <!--PHOTO GALLERY-->
         <div class="inner-content-box">
-            <section id="our-plants"></section>
+            <div class="gallery-container">
+                <div class="image-wrapper">
+                    <img src="assets/Photos Rectangle/3.png" alt="">
+                    <img src="assets/Photos Rectangle/2.png" alt="">
+                    <img src="assets/Photos Rectangle/1.png" alt="">
+                    <img src="assets/Photos Rectangle/4.png" alt="">
+                    <img src="assets/Photos Rectangle/5.png" alt="">
+                    <img src="assets/Photos Rectangle/6.png" alt="">
+                    <img src="assets/Photos Rectangle/7.png" alt="">
+                    <img src="assets/Photos Rectangle/8.png" alt="">
+                    <img src="assets/Photos Rectangle/9.png" alt="">
+                    <img src="assets/Photos Rectangle/10.png" alt="">
+                </div>
+            </div>
+
+            <div class="button-container">
+                <button onclick="slideImages('prev')" type="button">Previous</button>
+                <button onclick="slideImages('next')" type="button">Next</button>
+            </div>
         </div>
 
+        <!--OUR PLANTS-->
+        <div class="inner-content-box">
+            <section id="our-plants">
+
+                <div class="our-plants">
+                    <h3>Our Plants</h3>
+                    <p>As our business evolves, we are committed to expanding our offerings and enhancing our stock availability.</p>
+                    <div class="our-plants-p">
+                        <button id="menu-btn" class="menu-btn" onclick="toggleMenu()" type="button">View Our Plants</button>
+                        <div id="expandable-menu">
+
+                            <div class="plant-menu">
+
+                                <h3>Trees</h3>
+                                <div class="plants">
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Incense Cedar</h3>
+                                        <p>6' to 8' - $350</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Ponderosa Pine</h3>
+                                        <p>6' - $350</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Austrian Pine</h3>
+                                        <p>6' - $350</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Vine Maple</h3>
+                                        <p>6' to 8' - $300</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Aspen</h3>
+                                        <p>25 lb - $325</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Amur Flame Maple</h3>
+                                        <p>15 lb - $150</p>
+                                    </div>
+
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Service Berry</h3>
+                                        <p>1 lb - $10</p>
+                                        <p>5 lb - $35</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Red Twig Dogwood</h3>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Flowering Crabapple</h3>
+                                        <p>15 lb - $150</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Nine Bark 'Darts Gold'</h3>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Viburnum Opulus Nanum</h3>
+                                        <p>5 lb - $35</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Thimbleberry</h3>
+                                        <p>1 lb - $10</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Aspen</h3>
+                                        <p>5 lb - $35</p>
+                                        <p>15 lb - $135</p>
+                                        <p>20 lb - $325</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Canadian Chokecherry</h3>
+                                        <p>5 lb - $35</p>
+                                        <p>15 lb - $135</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Crabapple Varieties</h3>
+                                        <p>5 lb - $35</p>
+                                        <p>15 lb - $135</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Blue Spruce</h3>
+                                        <p>15 lb - $225</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Flowering Pear</h3>
+                                        <p>15 lb - $155</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Western Chokecherry</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Mugo Pine</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Potentilla Fruiticosa</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Bearberry</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Lilac Varieties</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Dogwood Red Osier</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Thimbleberry</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Ninebark</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Spirea Varieties</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Dwarf Arctic Willow</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Cotoneaster</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Cotoneaster Lowfast</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Oregon Grape</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Butterfly Bush</h3>
+                                        <p>1 lb - $15</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+                                </div>
+
+                                <h3>Perennials</h3>
+                                <div class="plants">
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Coral Bells</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant2.jpg" alt="">
+                                        <h3>Cali Fuscia</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Penstomen Varieties</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Sweet Woodruff</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Coneflower</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Blackeyed Susan</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Jackman Clematis</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Maiden Grass</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Ostrich Fern</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Lady Fern</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Feather Reed Grass</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Arctostaphylos Mixed Varieties</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Gold Flame Honeysuckle</h3>
+                                        <p>1 lb - $15</p>
+                                    </div>
+
+                                </div>
+
+                                <h3>Groundcover</h3>
+                                <p>Flat - $25</p>
+                                <p>Jumbo Pack - $30</p>
+                                <div class="plants">
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Ajugas Mixed Varieties</h3>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Moneyworts</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Scotch/Irish Moss</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Sedum Mixed Varieties</h3>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Thyme</h3>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Verbena</h3>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Veronica</h3>
+                                        <p></p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Vinca Mixed Varieties</h3>
+                                        <p></p>
+                                    </div>
+
+                                </div>
+
+                                <h3>Oregon List</h3>
+                                <p>One to Two Week Delivery</p>
+                                <div class="plants">
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Vine Maple</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>5 lb - $30</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Big Leaf Maple</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>3 lb - $20</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Common Yarrow</h3>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Uva Ursi Kinnikinnick</h3>
+                                        <p>3.5" - $6</p>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Mountain Aster</h3>
+                                        <p>3.5" - $6</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Douglas Aster</h3>
+                                        <p>3.5" - $6</p>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Dogwood Red Osier/Kelseyi</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>5 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Bleeding Heart</h3>
+                                        <p>3.5" - $6</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Wild Strawberry Chiloensis</h3>
+                                        <p>3.5" - $6</p>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Wood Strawberry</h3>
+                                        <p>3.5" - $6</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Mountain Strawberry</h3>
+                                        <p>3.5" - $6</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Twinberry</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Large Leaf Lupine</h3>
+                                        <p>3.5" - $6</p>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Riverbank Lupine</h3>
+                                        <p>3.5" - $6</p>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Mahonia</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>5 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Pacific Ninebark</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>5 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Aspen</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>3 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Prunus Emarginata Bitter Cherry</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>5 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Doug Fir</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                        <p>5 lb - $25</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Flowering Currant</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Wood Rose</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Thimbleberry</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Salmonberry</h3>
+                                        <p>1 lb - $12</p>
+                                        <p>2 lb - $15</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Scoulers Willow</h3>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Western Spirea</h3>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                    <div class="plant-item">
+                                        <img src="plant1.jpg" alt="">
+                                        <h3>Snowberry</h3>
+                                        <p>1 lb - $12</p>
+                                    </div>
+
+                                </div>
+
+                                <p>Don't see what you are looking for?</p>
+                                <button>Contact Us</button>
+
+                            </div>
+                            <button class="collapse-btn" onclick="toggleMenu()" type="button">Collapse</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </div>
+
+        <!--CONTACT US-->
         <div class="inner-content-box">
             <section id="contact-us"></section>
         </div>

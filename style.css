@@ -246,6 +246,8 @@ body.nav-active {
 }
 
 .inner-content-box {
+    display: flex;
+    flex-direction: column;
     background-color: #323c34;
     margin: 2rem;
     border-radius: 2rem;
@@ -269,7 +271,13 @@ body.nav-active {
     align-items: center;
 }
 
+.about-us h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
 .about-us p {
+    font-size: 1.75rem;
 }
 
 .about-us-p {
@@ -279,8 +287,9 @@ body.nav-active {
     align-items: center;
 }
 
-.expand-btn, .collapse-btn {
+.expand-btn, .collapse-btn, .menu-btn {
     color: black;
+    font-size: 1.5rem;
     background-color: #57655a;
     padding: 1rem 2rem;
     margin-top: 20px;
@@ -288,7 +297,7 @@ body.nav-active {
     display: inline-block;
 }
 
-.expand-btn:hover, .collapse-btn:hover {
+.expand-btn:hover, .collapse-btn:hover, .menu-btn:hover{
     background-color: white;
     transition: 250ms ease-in;
 }
@@ -303,3 +312,117 @@ body.nav-active {
 #expandable-paragraph p {
     padding-top: 2rem;
 }
+
+
+
+/* PHOTO GALLERY */
+.gallery-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+  }
+
+  .image-wrapper {
+    padding-top: 4rem;
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition for sliding */
+    border-radius: 2rem;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 2rem;
+  }
+
+  .button-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .button-container button {
+    color: black;
+    font-size: 1.5rem;
+    background-color: #57655a;
+    min-width: 150px;
+    margin: 20px;
+    border-radius: 2rem;
+    display: inline-block;
+  }
+
+  .button-container button:hover {
+    background-color: #ffffff;
+    transition: 250ms ease-in;
+  }
+
+
+
+/* OUR PLANTS */
+
+#our-plants {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 3rem;
+    margin: 2rem;
+}
+
+.our-plants {
+    justify-content: center;
+    align-items: center;
+}
+
+.our-plants h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.our-plants p {
+    font-size: 1.75rem;
+}
+
+.our-plants-p {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* OUR PLANTS MENU */
+
+#expandable-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in;
+    padding: 20px;
+}
+
+.plant-menu {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .plants {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns for large screens */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .plant-item {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .plant-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
