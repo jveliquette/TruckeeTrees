@@ -49,12 +49,12 @@ const imageWrapper = document.querySelector('.image-wrapper');
 /* EXPAND PLANT MENU */
 function toggleMenu() {
   var menu = document.getElementById("expandable-menu");
-  var button = document.getElementById("expand-btn");
+  var menuButton = document.getElementById("menu-btn");
   if (menu.style.maxHeight === "0px" || menu.style.maxHeight === "") {
     menu.style.maxHeight = menu.scrollHeight + "px"; // Expand the menu
-    button.textContent = "Collapse Menu"; // Change button text to "Collapse Menu"
+    menuButton.style.display = "none";
   } else {
     menu.style.maxHeight = "0"; // Collapse the menu
-    button.textContent = "Expand Menu"; // Change button text to "Expand Menu"
+    menuButton.style.display = "inline-block";
   }
 }
