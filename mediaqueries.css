@@ -1,3 +1,24 @@
+@media (max-width: 884px) {
+    .plants {
+      grid-template-columns: repeat(2, 1fr); /* Two columns for large screens */
+    }
+  }
+
+@media (max-width: 650px) {
+
+    .plants {
+        grid-template-columns: repeat(1, 1fr); /* One column for small screens */
+      }
+
+      .back-to-top-btn {
+        display: inline-block;
+    }
+
+    .back-to-top-btn-large {
+        display: none;
+    }
+}
+
 
 @media (max-width: 500px) {
     .topbar {
@@ -16,7 +37,7 @@
         font-size: 1.75rem;
     }
 
-    .about-us p, .our-plants p, .contact-us p {
+    .about-us p, .our-plants p, .contact-us p, .contact-us h4 {
         font-size: 1.5rem;
         line-height: 1.5;
     }
@@ -69,6 +90,23 @@
         font-size: 1rem;
     }
 
+    .footer-links ul li a {
+        font-size: 1.75rem;
+    }
+
+    .copyright p, .copyright a {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    .plant-item {
+        width: 175px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 300px) {
@@ -76,6 +114,30 @@
     .nav-links ul li a {
         font-size: 1.25rem;
     }
+
+    .plant-item {
+        width: 150px;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 265px) {
+
+    .plant-item {
+        width: 125px;
+        height: auto;
+    }
+
+    .plant-item h3 {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .plant-item p {
+        font-size: 1.3rem;
+    }
+
 }
 
 @media (max-width: 250px) {
