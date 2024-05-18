@@ -10,7 +10,7 @@
         grid-template-columns: repeat(1, 1fr); /* One column for small screens */
       }
 
-      .back-to-top-btn {
+    .back-to-top-btn {
         display: inline-block;
     }
 
@@ -54,7 +54,7 @@
         line-height: 1.5;
     }
 
-    .expand-btn, .collapse-btn, .button-container button, .menu-btn {
+    .expand-btn, .collapse-btn, .button-container button, .menu-btn, .success a {
         font-size: 1.25rem;
     }
 
@@ -63,6 +63,14 @@
     }
 
     .form-group input, .form-group textarea {
+        font-size: 1.5rem;
+    }
+
+    .success h2 {
+        font-size: 2rem;
+    }
+
+    .success p {
         font-size: 1.5rem;
     }
 
@@ -98,7 +106,7 @@
 
 @media (max-width: 350px) {
 
-    .button-container button {
+    .button-container button, .success a, .expand-btn, .collapse-btn, .back-to-top-btn, .menu-btn {
         font-size: 1rem;
     }
 
@@ -142,6 +150,14 @@
     .plant-item {
         width: 150px;
         height: auto;
+    }
+
+    .success h2 {
+        font-size: 1.5rem;
+    }
+
+    .success p {
+        font-size: 1.25rem;
     }
 
 }

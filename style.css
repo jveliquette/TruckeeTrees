@@ -688,3 +688,44 @@ body.nav-active {
     background-color: #c9dac8;
     transition: 250ms ease-in;
 }
+
+
+
+/* SUCCESS PAGE */
+
+.success {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.success h2 {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+
+.success p {
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.success a {
+    text-align: center;
+    color: black;
+    font-size: 1.5rem;
+    background-color: #57655a;
+    min-width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 0.25rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.success a:hover {
+    background-color: #ffffff;
+    transition: 250ms ease-in;
+}
