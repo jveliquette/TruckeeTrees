@@ -37,6 +37,18 @@
         font-size: 1.75rem;
     }
 
+    .contact-info h3 {
+        font-size: 1.75rem;
+    }
+
+    .contact-info a {
+        font-size: 1.5rem;
+    }
+
+    .contact-info a i {
+        font-size: 2.5rem;
+    }
+
     .about-us p, .our-plants p, .contact-us p, .contact-us h4 {
         font-size: 1.5rem;
         line-height: 1.5;
@@ -96,6 +108,18 @@
 
     .copyright p, .copyright a {
         font-size: 1rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info a {
+        font-size: 1.25rem;
+    }
+
+    .contact-info a i {
+        font-size: 2rem;
     }
 
 }

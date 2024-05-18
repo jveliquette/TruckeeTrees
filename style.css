@@ -438,7 +438,6 @@ body.nav-active {
   .line {
     border-bottom: 1px solid #ccc; /* Adjust color and thickness as needed */
     margin: 20px 20px; /* Adjust margin to control spacing */
-    padding-top: 2rem;
 }
 
   .plants {
@@ -468,10 +467,10 @@ body.nav-active {
   .back-to-top-btn {
     background-color: #777;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 0.5rem;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     border-radius: 10px;
     display: none;
     width: 100%;
@@ -479,7 +478,8 @@ body.nav-active {
 }
 
 .back-to-top-btn:hover {
-    background-color: #c6c6c6; /* Darker color on hover */
+    background-color: #c6c6c6;
+    transition: 250ms ease-in;
 }
 
 .back-to-top-btn-large {
@@ -496,7 +496,8 @@ body.nav-active {
 }
 
 .back-to-top-btn-large:hover {
-    background-color: #c6c6c6; /* Darker color on hover */
+    background-color: #c6c6c6;
+    transition: 250ms ease-in;
 }
 
 
@@ -511,10 +512,11 @@ body.nav-active {
     width: 100%;
     position: relative;
     margin: auto;
-    max-width: 800px;
+    max-width: 100%;
 }
 
 .contact-us {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -575,6 +577,40 @@ body.nav-active {
     outline: none;
 }
 
+
+/* CONTACT INFO */
+
+.contact-info h3 {
+    font-size: 2rem;
+    padding-top: 3.5rem;
+    line-height: 0;
+}
+
+.contact-info a {
+    font-size: 1.75rem;
+    padding-top: 0.5rem;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.contact-item:hover::after {
+    content: ''; /* Create the underline */
+    position: absolute; /* Position it relative to the parent */
+    left: 0; /* Align it with the left edge of the parent */
+    bottom: -2px; /* Adjust the distance below the text */
+    width: 100%; /* Extend it to the full width of the parent */
+    height: 2px; /* Set the thickness of the underline */
+    background-color: #57655a;
+}
+
+.contact-info a i {
+    font-size: 3rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info a i:hover {
+    transform: scale(1.5);
+}
 
 
 /* FOOTER */
