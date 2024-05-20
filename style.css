@@ -465,6 +465,16 @@ body.nav-active {
     border-radius: 5px;
 }
 
+.plant-item h6 {
+    color: rgba(0, 0, 0, 0.67);
+    line-height: 1.5;
+    padding-bottom: 5px;
+}
+
+.plant-item h6 a:hover {
+    text-decoration: underline;
+}
+
 
 
 /* BACK TO TOP BUTTON */
@@ -480,6 +490,7 @@ body.nav-active {
     display: none;
     width: 100%;
     max-width: 50%;
+    line-height: 1.5;
 }
 
 .back-to-top-btn:hover {
@@ -567,7 +578,7 @@ body.nav-active {
 
 .form-group input, .form-group textarea {
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #57655a;
     border-radius: 4px;
     box-sizing: border-box;

@@ -111,6 +111,19 @@
 }
 
 
+@media (max-width: 400px) {
+
+    .plant-item h3 {
+        font-size: 1.75rem;
+    }
+
+    .plant-item p {
+        font-size: 1.5rem;
+    }
+
+}
+
+
 @media (max-width: 350px) {
 
     .button-container button, .success a, .expand-btn, .collapse-btn, .back-to-top-btn, .menu-btn {
@@ -169,6 +182,10 @@
         font-size: 1.25rem;
     }
 
+    .footer-links ul li a {
+        font-size: 1.25rem;
+    }
+
 }
 
 
@@ -186,6 +203,10 @@
 
     .plant-item p {
         font-size: 1.3rem;
+    }
+
+    .plant-item h6 {
+        font-size: 1rem;
     }
 
 }
