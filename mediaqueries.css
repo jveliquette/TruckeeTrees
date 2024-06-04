@@ -7,6 +7,17 @@
 }
 
 
+@media (max-width: 700px) {
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+    }
+
+}
+
+
 @media (max-width: 650px) {
 
     .plants {
@@ -207,15 +218,6 @@
 
     .plant-item h6 {
         font-size: 1rem;
-    }
-
-}
-
-@media (max-width: 250px) {
-
-    .nav-links ul {
-        display: flex;
-        flex-direction: column;
     }
 
 }
