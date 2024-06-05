@@ -201,6 +201,7 @@ body.nav-active {
 
 .nav-links {
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .nav-links ul {
@@ -233,6 +234,24 @@ body.nav-active {
 
 .nav-links ul li a:hover::after {
     width: 100%;
+}
+
+
+
+/* SPECIALS */
+
+#specials {
+    background-color: rgba(219, 219, 219, 0.812);
+}
+
+.specials-container {
+    justify-content: center;
+    text-align: center;
+}
+
+.specials-container h2, .specials-container p{
+    font-size: 2rem;
+    line-height: 1.5;
 }
 
 
@@ -302,6 +321,7 @@ body.nav-active {
     display: inline-block;
     width: 100%;
     max-width: 50%;
+    margin-bottom: 20px;
 }
 
 .expand-btn:hover, .collapse-btn:hover, .menu-btn:hover{
@@ -574,6 +594,7 @@ body.nav-active {
     display: block;
     justify-content: left;
     text-align: left;
+    line-height: 1.5;
 }
 
 .form-group input, .form-group textarea {
@@ -744,4 +765,37 @@ body.nav-active {
 .success a:hover {
     background-color: #ffffff;
     transition: 250ms ease-in;
+}
+
+
+
+/* ORDER FORM */
+#order-form {
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: auto;
+    max-width: 100%;
+}
+
+.order-form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.order-form h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.o-form {
+    justify-content: center;
+    align-items: center;
 }

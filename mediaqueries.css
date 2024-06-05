@@ -45,7 +45,7 @@
         font-size: 2rem;
     }
 
-    .about-us h3, .photo-head, .our-plants h3, .contact-us h3 {
+    .about-us h3, .photo-head, .our-plants h3, .contact-us h3, .order-form h2{
         font-size: 2rem;
     }
 
@@ -90,6 +90,10 @@
         font-size: 1.5rem;
     }
 
+    .specials-container h2, .specials-container p {
+        font-size: 1.5rem;
+    }
+
 }
 
 
@@ -121,6 +125,13 @@
 
 }
 
+@media (max-width: 420px) {
+
+    .menu-btn {
+        line-height: 1.5;
+    }
+
+}
 
 @media (max-width: 400px) {
 
@@ -197,6 +208,17 @@
         font-size: 1.25rem;
     }
 
+    .specials-container h2, .specials-container p {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-width: 290px) {
+
+    .order-form h2{
+        font-size: 1.75rem;
+    }
 }
 
 

@@ -65,42 +65,94 @@
 
     <!--HEADER-->
     <header id="nav">
+
         <div class="logo">
             <img src="assets/logo.png" alt="logo" width="700px" height="auto">
         </div>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="./index.html#about-us">About Us</a></li>
+                <li><a href="./index.html#our-plants">Our Plants</a></li>
+                <li><a href="./index.html#contact-us">Contact Us</a></li>
+                <li><a href="./orderform.html">Order Form</a></li>
+            </ul>
+        </div>
+
     </header>
 
 
-    <!--SUCCESS-->
+    <!--SPECIALS-->
+    <section id="specials">
+        <div class="specials-container">
+            <h2>Specials:</h2>
+            <p>Aspen - $20 for #2, Fruit Trees (many varieties)</p>
+        </div>
+    </section>
+
+
+    <!--ORDER FORM-->
     <div class="content-box">
         <div class="inner-content-box">
-            <div class="success">
-                <h2>The Order From is Still in Progress</h2>
-                <p>Check back soon!<br> In the meantime, feel free to contact us! <br></p>
-                <div class="contact-info">
 
-                    <a href="tel:(775)843-3231" class="contact-item">
-                        <span class="span">Call</span>
-                    </a>
+            <section id="order-form">
+            <div class="order-form">
+                <h2>Plant Order Inquiry Form</h2>
+                <div class="line"></div>
+                <form class="o-form">
+                    <div id="plantInputContainer">
+                        <div class="form-group">
+                            <label for="plantType">Plant Name:</label>
+                            <input type="text" name="plantType[]" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="plantSize">Size:</label>
+                            <input type="text" name="plantSize[]" autocomplete="off" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" name="quantity[]" autocomplete="off" required min="1">
+                        </div>
+                    </div>
+                    <button type="button" id="addPlantButton" class="menu-btn">Add Another Plant</button>
+                        <div class="form-group">
+                            <label for="additionalComments">Comments or Questions:</label>
+                            <textarea id="Message" name="Message" rows="4"></textarea>
+                        </div>
+                    <button type="submit" class="menu-btn">Submit</button>
+                </form>
 
-                    <a href="mailto:peterlavin@truckeetrees.com" class="contact-item">
-                        <span class="span">Email</span>
-                    </a>
-
-                </div>
-                <a href="./index.html">Home</a>
             </div>
+        </section>
         </div>
     </div>
 
 
     <!--FOOTER-->
     <footer id="footer">
+
+        <div class="logo">
+            <img src="assets/logo.png" alt="logo" width="400px" height="auto">
+
+        </div>
+
+        <div class="footer-links">
+            <ul>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#our-plants">Our Plants</a></li>
+                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="./orderform.html">Order Form</a></li>
+            </ul>
+
+        </div>
+
         <div class="copyright">
             <p>&copy; 2024 Truckee Trees. All rights reserved.</p>
             <a href="https://www.linkedin.com/in/julia-veliquette-379255289" target="_blank">Website created by Julia Veliquette</a>
         </div>
+
     </footer>
+
 
 
     <!--JS LINK-->
