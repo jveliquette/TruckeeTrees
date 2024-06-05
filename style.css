@@ -639,12 +639,18 @@ body.nav-active {
     background-color: #57655a;
 }
 
-.contact-info a i {
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.contact-info a i, .contact-info a img{
     font-size: 3rem;
     transition: transform 0.3s ease;
 }
 
-.contact-info a i:hover {
+.contact-info a i:hover, .contact-info a img:hover{
     transform: scale(1.5);
 }
 
@@ -781,7 +787,7 @@ body.nav-active {
     max-width: 100%;
 }
 
-.order-form {
+.o-form {
     width: 100%;
     max-width: 500px;
     display: flex;
@@ -795,7 +801,11 @@ body.nav-active {
     margin-bottom: 20px;
 }
 
-.o-form {
+.order-form p {
+    margin-bottom: 20px;
+}
+
+.order-form {
     justify-content: center;
     align-items: center;
 }

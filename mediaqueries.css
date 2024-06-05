@@ -65,7 +65,12 @@
         font-size: 2.5rem;
     }
 
-    .about-us p, .our-plants p, .contact-us p, .contact-us h4 {
+    .contact-info a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .about-us p, .our-plants p, .contact-us p, .contact-us h4, .order-form p{
         font-size: 1.5rem;
         line-height: 1.5;
     }
@@ -172,6 +177,16 @@
         font-size: 2rem;
     }
 
+    .contact-info a img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact-info a img {
+        width: 30px;
+        height: 30px;
+    }
+
 }
 
 
@@ -216,7 +231,7 @@
 
 @media (max-width: 290px) {
 
-    .order-form h2{
+    .order-form h2 {
         font-size: 1.75rem;
     }
 }

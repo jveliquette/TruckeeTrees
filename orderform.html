@@ -96,34 +96,56 @@
         <div class="inner-content-box">
 
             <section id="order-form">
-            <div class="order-form">
-                <h2>Plant Order Inquiry Form</h2>
-                <div class="line"></div>
-                <form class="o-form">
-                    <div id="plantInputContainer">
-                        <div class="form-group">
-                            <label for="plantType">Plant Name:</label>
-                            <input type="text" name="plantType[]" autocomplete="off" required>
+
+                <div class="o-form">
+
+                    <h2>Plant Order Inquiry Form</h2>
+                    <div class="line"></div>
+                    <p>Place your order here! <br> Want a plant that is not shown on the site? <br> Just ask!</p>
+
+                    <form class="order-form" action="https://formsubmit.co/juliaveliquette@gmail.com" method="POST">
+
+                        <!--HONEYPOT-->
+                        <input type="text" name="_honey" style="display: none;">
+
+                        <!--DISABLE CAPTCHA-->
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_next" value="https://truckeetrees.com/ordersuccess.html">
+
+                        <div id="plantInputContainer">
+
+                            <div class="form-group">
+                                <label for="plantType">Plant Name:</label>
+                                <input type="text" name="plantType[]" autocomplete="off" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="plantSize">Size:</label>
+                                <input type="text" name="plantSize[]" autocomplete="off" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" name="quantity[]" autocomplete="off" required min="1">
+                            </div>
+
                         </div>
-                        <div class="form-group">
-                            <label for="plantSize">Size:</label>
-                            <input type="text" name="plantSize[]" autocomplete="off" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="quantity">Quantity:</label>
-                            <input type="number" name="quantity[]" autocomplete="off" required min="1">
-                        </div>
-                    </div>
-                    <button type="button" id="addPlantButton" class="menu-btn">Add Another Plant</button>
+
+                        <button type="button" id="addPlantButton" class="menu-btn">Add Another Plant</button>
+
                         <div class="form-group">
                             <label for="additionalComments">Comments or Questions:</label>
                             <textarea id="Message" name="Message" rows="4"></textarea>
                         </div>
-                    <button type="submit" class="menu-btn">Submit</button>
-                </form>
 
-            </div>
-        </section>
+                        <button type="submit" class="menu-btn">Submit</button>
+                    </form>
+
+                </div>
+
+            </section>
+
         </div>
     </div>
 
@@ -138,9 +160,9 @@
 
         <div class="footer-links">
             <ul>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="#our-plants">Our Plants</a></li>
-                <li><a href="#contact-us">Contact Us</a></li>
+                <li><a href="./index.html#about-us">About Us</a></li>
+                <li><a href="./index.html#our-plants">Our Plants</a></li>
+                <li><a href="./index.html#contact-us">Contact Us</a></li>
                 <li><a href="./orderform.html">Order Form</a></li>
             </ul>
 
