@@ -102,8 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
       plantInputContainer.appendChild(newPlantInputGroup);
   });
 
-  document.querySelector('.order-form').addEventListener('submit', function(event) {
-      // Add your code to handle form submission here
-      console.log('Form submitted!');
-  });
+
 });
