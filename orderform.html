@@ -93,69 +93,18 @@
 
 
     <!--ORDER FORM-->
-    <div class="content-box">
-        <div class="inner-content-box">
 
             <section id="order-form">
                 <div class="o-form">
                     <h2>Plant Order Inquiry Form</h2>
                     <div class="line"></div>
                     <p>Place your order here! <br> Want a plant that is not shown on the site? <br> Just ask!</p>
-
-                    <form class="order-form" action="https://formsubmit.co/juliaveliquette@gmail.com" method="post">
-
-                        <!--HONEYPOT-->
-                        <input type="text" name="_honey" style="display: none;">
-
-                        <!--DISABLE CAPTCHA-->
-                        <input type="hidden" name="_captcha" value="false">
-
-                        <input type="hidden" name="_next" value="ordersuccess.html"> <!--https://truckeetrees.com/ordersuccess.html-->
-
-                        <div id="plantInputContainer">
-
-                            <div class="form-group">
-                                <label for="Name">Your Name:</label>
-                                <input type="text" id="Name" name="Name" autocomplete="off" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="Email">Email:</label>
-                                <input type="email" name="Email" autocomplete="off" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="plantType1">Plant Name:</label>
-                                <input type="text" id="plantType1" name="plantType[]" autocomplete="off" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="plantSize1">Size:</label>
-                                <input type="text" id="plantSize1" name="plantSize[]" autocomplete="off" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="quantity1">Quantity:</label>
-                                <input type="number" id="quantity1" name="quantity[]" autocomplete="off" required min="1">
-                            </div>
-
-                        </div>
-
-                        <button type="button" id="addPlantButton" class="menu-btn">Add Another Plant</button>
-
-                        <div class="form-group">
-                            <label for="Message">Comments or Questions:</label>
-                            <textarea id="Message" name="Message" rows="4"></textarea>
-                        </div>
-
-                        <button type="submit" class="menu-btn">Submit</button>
-                    </form>
-
+                </div>
+                <div class="o-form">
+                    <iframe id="o-form" title="Plant Order Form" allowfullscreen="true" allow="geolocation; microphone; camera" src="https://my.forms.app/form/6661e201b25624393dac3b9c"></iframe>
                 </div>
             </section>
 
-        </div>
-    </div>
 
 
     <!--FOOTER-->

@@ -35,6 +35,13 @@
 }
 
 
+@media (max-width: 600px) {
+    .o-form iframe {
+        width: 90%;
+    }
+}
+
+
 @media (max-width: 500px) {
 
     .topbar {
@@ -45,7 +52,7 @@
         font-size: 2rem;
     }
 
-    .about-us h3, .photo-head, .our-plants h3, .contact-us h3, .order-form h2{
+    .about-us h3, .photo-head, .our-plants h3, .contact-us h3, .o-form h2{
         font-size: 2rem;
     }
 
@@ -70,7 +77,7 @@
         height: 35px;
     }
 
-    .about-us p, .our-plants p, .contact-us p, .contact-us h4, .order-form p{
+    .about-us p, .our-plants p, .contact-us p, .contact-us h4, .o-form p{
         font-size: 1.5rem;
         line-height: 1.5;
     }
@@ -231,7 +238,7 @@
 
 @media (max-width: 290px) {
 
-    .order-form h2 {
+    .o-form h2 {
         font-size: 1.75rem;
     }
 }

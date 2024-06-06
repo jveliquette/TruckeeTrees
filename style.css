@@ -778,34 +778,30 @@ body.nav-active {
 /* ORDER FORM */
 #order-form {
     display: flex;
+    flex-direction: column;
     color: white;
     text-align: center;
     justify-content: center;
     width: 100%;
-    position: relative;
     margin: auto;
-    max-width: 100%;
 }
 
-.o-form {
-    width: 100%;
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.order-form h2 {
+.o-form h2 {
+    padding-top: 3rem;
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 20px;
+    color: black;
 }
 
-.order-form p {
+.o-form p {
     margin-bottom: 20px;
+    color: black;
 }
 
-.order-form {
-    justify-content: center;
-    align-items: center;
+.o-form iframe {
+    width: 100%;
+    min-width:100%;
+    height:600px;
+    border:none;
 }
